@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
  font-family: 'lato',sans-serif;
  padding: 0;
@@ -225,3 +229,42 @@ nav {
 
 }
 
+.colors,.sizes {
+    display: flex;
+}
+
+.color {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child {
+    background-color: blue;
+}
+
+.size {
+    padding: 5px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.productButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productButton:hover  {
+    background-color: white;
+    color: black;
+}
