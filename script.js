@@ -1,6 +1,7 @@
+// Variable Declaration
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
-
+// Array of objects for changing the products according to color
 const products = [
     {
         id: 1,
@@ -80,19 +81,18 @@ const products = [
     
 ]
 
-let chosenProduct = products[0];
-
+// Choosing products by index
+let chosenProduct = products[0]; 
+// Product Variable Declaration
 const currentProductImg = document.querySelector(".productImg");
 const currentProductTitle = document.querySelector(".productTitle");
 const currentProductPrice = document.querySelector(".productPrice");
 const currentProductColors = document.querySelectorAll(".color");
 const currentProductSizes = document.querySelectorAll(".size");
-
-
+// Looping EveryItems and Adding click event listeners
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
-       wrapper.style.transform = `translateX(${-100 * index}vw)`;
-
+       wrapper.style.transform = `translateX(${-100 * index}vw)`; // Shifts the viewport for another 100 vw to change the product
        chosenProduct = products[index];
 
        currentProductTitle.textContent = chosenProduct.title;

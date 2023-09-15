@@ -457,4 +457,12 @@ border-bottom: 1px solid gray;
         position: absolute;
         bottom: -50px;
     }
+
+    .productButton {
+        margin-bottom: 8px;
+    }
+
+    .payment {
+        width: 80%;
+    }
 }
